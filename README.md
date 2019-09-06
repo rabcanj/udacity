@@ -27,5 +27,5 @@ Bad things gone, say good people - 170098 views
 84557 - Markoff Chaney views
 
 3.  On which days did more than 1% of requests lead to errors:
-Jul 17, 2016 - 2.3 views
+Jul 17, 2016 - 2.3 %
 ```

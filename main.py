@@ -17,7 +17,7 @@ if __name__ == '__main__':
     res = cur.fetchall()
     print("1. What are the most popular three articles of all time?:")
     for i in res:
-        print("{name} - {views} views".format(name = i[0], views = i[1]))
+        print("\"{name}\" - {views} views".format(name = i[0], views = i[1]))
     #TASK 2
     cur.execute("""
         SELECT  COUNT (title), author, authors.name FROM ARTICLES
@@ -30,7 +30,7 @@ if __name__ == '__main__':
     print
     print("2. Who are the most popular authors of all times?:")
     for i in res:
-        print("{name} - {views} views".format(name = i[0], views = i[2]))
+        print("{name} - {views} views".format(name = i[2], views = i[0]))
     #TASK 3
     cur.execute("""
         SELECT TO_CHAR(date_trunc, 'Mon DD, YYYY'), round(errorpercentage,1)  from (
@@ -55,4 +55,4 @@ if __name__ == '__main__':
     print("3.  On which days did more than 1% of requests lead to errors:")
     res = cur.fetchall()
     for i in res:
-        print("{date} - {errorpercentage} views".format(date = i[0], errorpercentage = i[1]))
+        print("{date} - {errorpercentage} % errors".format(date = i[0], errorpercentage = i[1]))
