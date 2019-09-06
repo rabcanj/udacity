@@ -12,7 +12,6 @@ def db_connect(schema="news"):
         db, c - a tuple. The first element is a connection to the database.
                 The second element is a cursor for the database.
     """
-
     db = psycopg2.connect(dbname=schema, user="", password="")
     cur = db.cursor()
     return (db, cur)
@@ -29,7 +28,6 @@ def execute_query(query):
     returns:
     A list of tuples containing the results of the query.
     """
-
     cur = db_connect()[1]
     cur.execute(query)
     return cur.fetchall()
