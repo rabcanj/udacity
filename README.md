@@ -1,5 +1,5 @@
-# Logs Analysis
-### How to run me
+# Logs Analysis project
+
 The script uses python 2.7 and postgre database. You can use VM machine configuration available here: [vagrant](https://s3.amazonaws.com/video.udacity-data.com/topher/2018/April/5acfbfa3_fsnd-virtual-machine/fsnd-virtual-machine.zip), where everything is installed.
 
 - download the [database](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip)
@@ -11,8 +11,8 @@ Execute script:
 ```sh
 $ python main.py
 ```
+# Example
 
-Example:
 ```sh
 $ python main.py
 1. What are the most popular three articles of all time?:
